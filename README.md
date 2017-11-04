@@ -22,9 +22,19 @@ https://github.com/Atlantic18/DoctrineExtensions/blob/master/doc/tree.md
 ### Install TreeBundle
 
 Install it via composer 
-```bash
-composer require zema888/tree-bundle
-```
+1. Add this bundle to your project in composer.json:
+
+	```
+    {
+        "require": {
+            "zema888/zema-tree-bundle": "dev-master",
+        }
+    }
+    ```
+    
+2. Run the composter to download the bundle:
+
+    php composer.phar update zema888/zema-tree-bundle
 
 Register the bundle in your app kernel `./app/AppKernel.php`
 ```php
