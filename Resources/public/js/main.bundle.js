@@ -429,7 +429,7 @@ var ElementComponent = (function () {
     };
     ElementComponent.prototype.createChild = function (el) {
         var _this = this;
-        this._window.start_field_dialog_form_edit_tree(__WEBPACK_IMPORTED_MODULE_3__el_service__["a" /* ElService */].edit + 'create');
+        this._window.start_field_dialog_form_edit_tree(__WEBPACK_IMPORTED_MODULE_3__el_service__["a" /* ElService */].edit + '/create');
         this._window.returnEdit = function (id, title) {
             el.show_children = false;
             _this.elService.moveEl(id, el.id, null, null).then(function (res) {

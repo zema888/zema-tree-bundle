@@ -32,7 +32,7 @@ class TreeAdminController extends CRUDController
             }
 
             return $this->render(
-                'TreeBundle:CRUD:tree.html.twig',
+                'ZemaTreeBundle:CRUD:tree.html.twig',
                 [
                     'action' => 'list',
                     'csrf_token' => $this->getCsrfToken('sonata.batch'),

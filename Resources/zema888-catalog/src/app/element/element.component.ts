@@ -119,7 +119,7 @@ export class ElementComponent implements OnInit {
   }
 
   public createChild(el: Element): void {
-    this._window.start_field_dialog_form_edit_tree(ElService.edit + 'create');
+    this._window.start_field_dialog_form_edit_tree(ElService.edit + '/create');
     this._window.returnEdit = (id, title) => {
       el.show_children = false;
       this.elService.moveEl(id, el.id, null, null).then(res => {

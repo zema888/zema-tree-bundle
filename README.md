@@ -44,7 +44,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             ...
-            new Zema888\TreeBundle\TreeBundle(),
+            new Zema\Bundle\TreeBundle\ZemaTreeBundle(),
         );
         ...
     }
@@ -61,7 +61,7 @@ zema888_tree:
 
 For the entity with enabled [Gedmo Nested Set](https://github.com/Atlantic18/DoctrineExtensions/blob/master/doc/tree.md) follow these steps:
 
-Extend Admin class from `\TreeBundle\Admin\AbstractTreeAdmin`
+Extend Admin class from `Zema\Bundle\TreeBundle\Admin\AbstractTreeAdmin`
 ```php
 class SubjectAdmin extends AbstractTreeAdmin
 {
@@ -69,7 +69,7 @@ class SubjectAdmin extends AbstractTreeAdmin
 }
 ```
 
-Extend AdminController from `\TreeBundle\Controller\TreeAdminController`
+Extend AdminController from `Zema\Bundle\TreeBundle\Controller\TreeAdminController`
 ```php
 class SubjectAdminController extends TreeAdminController
 {

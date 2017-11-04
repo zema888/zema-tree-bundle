@@ -6,20 +6,20 @@
                   edit="{{ admin.generateUrl('edit', {'id': '{id}'}) }}"></app-root>
     </div>
     {% include 'SonataDoctrineORMAdminBundle:CRUD:edit_modal.html.twig' with {'id' : 'tree'} %}
-    {% include 'TreeBundle:CRUD:modal_edit_association_script.html.twig' with {'id' : 'tree', 'admin' : admin} %}
-    <script src="{{ asset('bundles/zema888tree/js/inline.bundle.js') }}"></script>
-    <script src="{{ asset('bundles/zema888tree/js/polyfills.bundle.js') }}"></script>
-    <script src="{{ asset('bundles/zema888tree/js/styles.bundle.js') }}"></script>
-    <script src="{{ asset('bundles/zema888tree/js/vendor.bundle.js') }}"></script>
-    <script src="{{ asset('bundles/zema888tree/js/main.bundle.js') }}"></script>
+    {% include 'ZemaTreeBundle:CRUD:modal_edit_association_script.html.twig' with {'id' : 'tree', 'admin' : admin} %}
+    <script src="{{ asset('bundles/zematree/js/inline.bundle.js') }}"></script>
+    <script src="{{ asset('bundles/zematree/js/polyfills.bundle.js') }}"></script>
+    <script src="{{ asset('bundles/zematree/js/styles.bundle.js') }}"></script>
+    <script src="{{ asset('bundles/zematree/js/vendor.bundle.js') }}"></script>
+    <script src="{{ asset('bundles/zematree/js/main.bundle.js') }}"></script>
 {% endblock %}
 
 {% block stylesheets %}
     {#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">#}
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     {{ parent() }}
-    <link href="{{ asset('bundles/zema888tree/css/dragula.min.css') }}" rel="stylesheet" type="text/css" media="all"/>
-    <link href="{{ asset('bundles/zema888tree/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('bundles/zematree/css/dragula.min.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('bundles/zematree/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
 {% endblock %}
 
 
